@@ -16,18 +16,23 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
+        //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String sSideA = reader.readLine();
         String sSideB = reader.readLine();
         String sSideC = reader.readLine();
 
-        int iSideA = Integer.parseInt(sSideA);
-        int iSideB = Integer.parseInt(sSideB);
-        int iSideC = Integer.parseInt(sSideC);
+        int SideA = Integer.parseInt(sSideA);
+        int SideB = Integer.parseInt(sSideB);
+        int SideC = Integer.parseInt(sSideC);
 
-        if( (iSideA + iSideB) > iSideC{
-
-        }
+        if ((SideA + SideB) > SideC) {
+            if ((SideA + SideC) > SideB) {
+                if ((SideB + SideC) > SideA) {
+                    System.out.println("Треугольник существует.");
+                } else System.out.println("Треугольник не существует.");
+            } else System.out.println("Треугольник не существует.");
+        } else System.out.println("Треугольник не существует.");
     }
 }
