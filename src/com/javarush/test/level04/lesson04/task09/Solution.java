@@ -15,6 +15,10 @@ package com.javarush.test.level04.lesson04.task09;
 красный
 Пример для числа 5:
 зеленый
+
+зел - 3
+жел - 1
+кр  - 1
 */
 
 import java.io.*;
@@ -24,6 +28,10 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String sYear = reader.readLine();
+        int iYear = Integer.parseInt(sYear);
 
     }
 }

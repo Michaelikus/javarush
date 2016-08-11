@@ -16,6 +16,15 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String sNum1 = reader.readLine();
+        String sNum2 = reader.readLine();
+        String sNum3 = reader.readLine();
+
+        int i1 = Integer.parseInt(sNum1);
+        int i2 = Integer.parseInt(sNum2);
+        int i3 = Integer.parseInt(sNum3);
 
     }
 }
