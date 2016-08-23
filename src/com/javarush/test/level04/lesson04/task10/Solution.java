@@ -26,5 +26,15 @@ public class Solution
         int i2 = Integer.parseInt(sNum2);
         int i3 = Integer.parseInt(sNum3);
 
+
+        if(i1 == i2){
+            System.out.print(i1 + " " + i2 + " ");
+            if(i1 == i3) System.out.println(i3);
+        } else if (i1 == i3)
+        {
+            System.out.print(i1 + " " + i3);
+        } else if (i2 == i3){
+            System.out.print(i2 + " " + i3);
+        }
     }
 }
