@@ -12,26 +12,22 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int i1 = Integer.parseInt(reader.readLine());
-        int i2 = Integer.parseInt(reader.readLine());
+        int[] numbers = new int[4];
 
-        int i3 = Integer.parseInt(reader.readLine());
-        int i4 = Integer.parseInt(reader.readLine());
-
-        int iMax;
-
-        iMax = i1;
-
-        if( i1 < i2){
-            if(i2 < i3) {
-                if(i3 < i4){
-                    System.out.println(i4);
-                }
-            }
-        } else if(i1 < i3){
-            if(i3 < i4){
-                System.out.println(i3);
-            }
+        for (int number_index = 0; number_index < 4; number_index++){
+            numbers[number_index] = Integer.parseInt(reader.readLine());
+            //System.out.println(numbers[number_index]);
         }
+
+
+        System.out.println("Maximum is " + MaxInt(numbers));
+    }
+    private static int MaxInt(int[] numbers_array){
+        int maximum;
+        maximum = numbers_array[0];
+        for (int number_index = 0; number_index < 4; number_index++){
+            if(numbers_array[number_index] > maximum ) maximum = numbers_array[number_index];
+        }
+        return maximum;
     }
 }
