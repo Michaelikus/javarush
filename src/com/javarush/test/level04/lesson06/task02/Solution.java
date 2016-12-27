@@ -18,8 +18,6 @@ public class Solution
             numbers[number_index] = Integer.parseInt(reader.readLine());
             //System.out.println(numbers[number_index]);
         }
-
-
         System.out.println("Maximum is " + MaxInt(numbers));
     }
     private static int MaxInt(int[] numbers_array){
